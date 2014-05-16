@@ -14,6 +14,9 @@ gcc sha256_twice.c -o sha256_twice -lcrypto
 CHashWriter.cpp
 g++ CHashWriter_main.cpp CHashWriter.cpp -o CHashWriter -lcrypto
 
+uint256.c
+g++ uint256/main.cpp -o uint256/uint256
+
 Bash
 echo "ddd" | openssl sha
 echo "ddd" | openssl sha1
