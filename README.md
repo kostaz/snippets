@@ -5,6 +5,9 @@ gcc sha1.c -o sha1 -lcrypto
 sha256.c
 gcc sha256.c -o sha256 -lcrypto
 
+sha256_ctx.c
+gcc sha256_ctx.c -o sha256_ctx -lcrypto
+
 Bash
 echo "ddd" | openssl sha
 echo "ddd" | openssl sha1

@@ -4,14 +4,14 @@
 
 int main()
 {
-	unsigned char digest[SHA256_DIGEST_LENGTH];
+	SHA256_CTX ctx;
+	unsigned char digest[SHA256_DIGEST_LENGTH] = {0};
 	unsigned char ibuf[] = "hello world";
 	int i;
 
-	if (!SHA256(ibuf, strlen(ibuf), digest)) {
-		printf("%s: SHA256 failed\n", __func__);
-		return 1;
-	}
+	SHA256_Init(&ctx);
+	SHA256_Update(&ctx, ibuf, strlen(ibuf));
+	SHA256_Final(digest, &ctx);
 
 	for (i = 0; i < SHA256_DIGEST_LENGTH; i++)
 		printf("%02x", digest[i]);
