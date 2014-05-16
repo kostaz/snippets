@@ -17,6 +17,9 @@ g++ CHashWriter_main.cpp CHashWriter.cpp -o CHashWriter -lcrypto
 uint256.c
 g++ uint256/main.cpp -o uint256/uint256
 
+boost_threads
+g++ boost_thread/main.cpp -o boost_thread/main -lboost_thread -lboost_system
+
 Bash
 echo "ddd" | openssl sha
 echo "ddd" | openssl sha1
