@@ -33,6 +33,8 @@ boost/filesystem_tut3.cpp
 http://www.boost.org/doc/libs/1_55_0b1/libs/filesystem/doc/tutorial.html
 g++ boost/filesystem_tut3.cpp -o boost/filesystem_tut3 -lboost_system -lboost_filesystem
 
+boost/filesystem_tut4.cpp
+g++ boost/filesystem_tut4.cpp -o boost/filesystem_tut4 -lboost_system -lboost_filesystem
 
 Bash
 echo "ddd" | openssl sha
