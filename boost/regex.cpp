@@ -9,6 +9,14 @@ bool validate_card_format(const string& s)
 	return boost::regex_match(s, e);
 }
 
+const boost::regex e("\\A(\\d{3,4})[- ]?(\\d{4})[- ]?(\\d{4})[- ]?(\\d{4})\\z");
+const string machine_format("\\1\\2\\3\\4");
+
+string machine_readable_card_number(const string& s)
+{
+	return boost::regex_replace(s, e, machine_format, boost::match_default | boost::format_sed);
+}
+
 int main()
 {
 	const int num_of_strings = 4;
@@ -23,6 +31,12 @@ int main()
 	{
 		cout << "validate_card_format(\"" << s[i] << "\") returned "
 		     << validate_card_format(s[i]) << endl;
+	}
+
+	for (int i = 0; i < num_of_strings; i++)
+	{
+		cout << "machine_readable_card_number(\"" << s[i] << "\") returned "
+		     << machine_readable_card_number(s[i]) << endl;
 	}
 
 	return 0;
