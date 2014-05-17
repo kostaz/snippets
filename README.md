@@ -25,6 +25,9 @@ boost_thread_group
 http://www.boost.org/doc/libs/1_55_0/libs/thread/example/thread_group.cpp
 g++ boost_thread_group/main.cpp -o boost_thread_group/main -lboost_thread -lboost_system
 
+boost/regex.cpp
+http://www.boost.org/doc/libs/1_31_0/libs/regex/example/snippets/credit_card_example.cpp
+g++ boost/regex.cpp -o boost/regex -lboost_regex
 
 Bash
 echo "ddd" | openssl sha
