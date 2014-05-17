@@ -18,7 +18,13 @@ uint256.c
 g++ uint256/main.cpp -o uint256/uint256
 
 boost_threads
+http://antonym.org/2009/05/threading-with-boost---part-i-creating-threads.html
 g++ boost_thread/main.cpp -o boost_thread/main -lboost_thread -lboost_system
+
+boost_thread_group
+http://www.boost.org/doc/libs/1_55_0/libs/thread/example/thread_group.cpp
+g++ boost_thread_group/main.cpp -o boost_thread_group/main -lboost_thread -lboost_system
+
 
 Bash
 echo "ddd" | openssl sha
