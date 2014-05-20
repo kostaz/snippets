@@ -36,6 +36,11 @@ g++ boost/filesystem_tut3.cpp -o boost/filesystem_tut3 -lboost_system -lboost_fi
 boost/filesystem_tut4.cpp
 g++ boost/filesystem_tut4.cpp -o boost/filesystem_tut4 -lboost_system -lboost_filesystem
 
+openssl/bignum.cpp
+http://stackoverflow.com/questions/16437475/openssl-bn-ctx-usage
+http://etutorials.org/Programming/secure+programming/Chapter+7.+Public+Key+Cryptography/7.4+Manipulating+Big+Numbers/
+g++ openssl/bignum.cpp -o openssl/bignum -lcrypto
+
 Bash
 echo "ddd" | openssl sha
 echo "ddd" | openssl sha1
