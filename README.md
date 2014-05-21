@@ -41,6 +41,10 @@ http://stackoverflow.com/questions/16437475/openssl-bn-ctx-usage
 http://etutorials.org/Programming/secure+programming/Chapter+7.+Public+Key+Cryptography/7.4+Manipulating+Big+Numbers/
 g++ openssl/bignum.cpp -o openssl/bignum -lcrypto
 
+libdb/main.cpp
+http://www.stanford.edu/class/cs276a/projects/docs/berkeleydb/ref/simple_tut/open.html
+g++ libdb/main.cpp -o libdb/main -ldb
+
 Bash
 echo "ddd" | openssl sha
 echo "ddd" | openssl sha1
