@@ -53,3 +53,8 @@ echo "ddd" | openssl dgst -sha256
 echo "ddd" | openssl dgst -sha384
 echo "ddd" | openssl dgst -sha512
 
+References
+----------
+
+[Autoconf tutorial](http://www.edwardrosten.com/code/autoconf/)
+
